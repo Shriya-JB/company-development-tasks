@@ -774,7 +774,7 @@ static void print_probe (probe *pb) {
 
 
 	if (!pb->res.sa.sa_family)
-		printf (" *");
+		printf (" Retrying...");
 	else {
 	    int prn = !np;	/*  print if the first...  */
 
