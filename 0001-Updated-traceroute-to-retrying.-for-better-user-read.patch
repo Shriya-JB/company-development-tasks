@@ -1,0 +1,26 @@
+From 4f83d3eaba02bd9f7b0de78dd5a66584a271e3e6 Mon Sep 17 00:00:00 2001
+From: Shriya <shriyajb11officielle@gmail.com>
+Date: Mon, 25 May 2026 12:28:50 +0530
+Subject: [PATCH] Updated traceroute * to retrying... for better user
+ readability
+
+---
+ traceroute-2.1.5/traceroute/traceroute.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/traceroute-2.1.5/traceroute/traceroute.c b/traceroute-2.1.5/traceroute/traceroute.c
+index 08b850a..97f6f29 100644
+--- a/traceroute-2.1.5/traceroute/traceroute.c
++++ b/traceroute-2.1.5/traceroute/traceroute.c
+@@ -774,7 +774,7 @@ static void print_probe (probe *pb) {
+ 
+ 
+ 	if (!pb->res.sa.sa_family)
+-		printf (" *");
++		printf (" Retrying...");
+ 	else {
+ 	    int prn = !np;	/*  print if the first...  */
+ 
+-- 
+2.53.0.windows.1
+
